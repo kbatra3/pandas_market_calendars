@@ -6,7 +6,7 @@ from pandas_market_calendars.exchange_calendar_cme import CMEEquityExchangeCalen
 
 def test_time_zone():
     assert CMEEquityExchangeCalendar().tz == pytz.timezone('America/Chicago')
-    assert CMEEquityExchangeCalendar().name == 'CME_Equity'
+    assert CMEEquityExchangeCalendar().name == 'CME'
 
 
 def test_sunday_opens():

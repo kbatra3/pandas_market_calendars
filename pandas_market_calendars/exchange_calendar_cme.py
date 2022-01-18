@@ -41,7 +41,7 @@ class CMEEquityExchangeCalendar(MarketCalendar):
     Close Time: 5:00 PM, America/New_York / 4:00 PM Chicago
     Break: 4:15 - 4:30pm America/New_York / 3:15 - 3:30 PM Chicago
     """
-    aliases = ['CME_Equity', 'CBOT_Equity']
+    aliases = ['CME', 'CME_Equity', 'CBOT_Equity']
     regular_market_times = {
         "market_open": ((None, time(17), -1),), # offset by -1 day
         "market_close": ((None, time(16)),),
@@ -51,7 +51,7 @@ class CMEEquityExchangeCalendar(MarketCalendar):
 
     @property
     def name(self):
-        return "CME_Equity"
+        return "CME"
 
     @property
     def tz(self):
